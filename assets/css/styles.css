@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+:root {
+    --primary-color: #E0E0E0;
+    --secondary-color: #FF9500;
+    --dark-color: #1C1C1C;
+    --gray-color: #505050;
+    --num-btn-bg: #333333;
+    --num-btn-color: white;
+    --func-btn-bg: #A6A6A6;
+    --func-btn-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 440px;
+    background: var(--dark-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.calculadora {
+    width: 100%;
+}
+
+
+
+.display {
+    font-size: 2.5em;
+    width: 100%;
+    text-align: right;
+    height: 200px;
+    background: var(--dark-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    margin: 6px 5px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.btn-num {
+    background: var(--num-btn-bg);
+    color: var(--num-btn-color);
+}
+
+.orange-background {
+    background: var(--secondary-color);
+    color: white;
+}
+
+
+.gray-background {
+    background: var(--func-btn-bg);
+    color: var(--func-btn-color);
+}
+
+.btn:hover {
+    background: #636363;
+}
+
+.orange-background:hover {
+    background: #bda170;
+}
+
+.gray-background:hover {
+    background: #8e8e8e;
+}
